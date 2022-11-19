@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body class="flex" id="body">
+    <main class="main flex">
+      <section class="text-sect flex">
+        <div class="h1-para flex">
+          <h1 class="h1">Learn to code by watching others</h1>
+          <p class="para">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+      </section>
+
+      <section class="form-sect flex">
+        <button class="blue-btn">
+          Try it free 7 days <span class="thereafter">then $20/mo. thereafter</span>
+        </button>
+
+        <div class="form-div flex">
+          <form novalidate id="myForm" class="form flex">
+            <div class="input-icon">
+              <input
+              type="text"
+              name="First-Name"
+              id="First-Name"
+              class="input"
+              placeholder="Jonathan |"
+              size="25"
+              required
+            />
+            <img src="images/icon-error.svg" alt="" class="error-icon" id="first-name-icon">
+            </div>          
+              <span class="error-text" id="first-name-error" aria-live="polite"></span>           
+            <div class="input-icon">
+              <input
+              type="text"
+              name="Last-Name"
+              id="Last-Name"
+              class="input"
+              placeholder="Last Name"
+              size="25"
+              required
+            />
+            <img src="images/icon-error.svg" alt="" class="error-icon" id="last-name-icon">
+            </div>
+              <span class="error-text" id="last-name-error" aria-live="polite"></span>
+            <div class="input-icon">
+              <input
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              placeholder="Email Address"
+              pattern="[a-z0-9._%+-]+@[gmail]+\.[com]{2,4}$"
+              size="25"
+              minlength="24"
+              required
+            />
+            <img src="images/icon-error.svg" alt="" class="error-icon" id="email-icon">
+            </div>           
+              <span class="error-text" id="email-error" aria-live="polite"></span>           
+            <div class="input-icon">
+              <input
+              type="password"
+              name="password"
+              id="password"
+              class="input"
+              placeholder="Password"
+              size="25"
+              minlength="8"
+              required
+            />
+            <img src="images/icon-error.svg" alt="" class="error-icon" id="password-icon">
+            </div>          
+               <span class="error-text" id="password-error" aria-live="polite"></span>          
+            <button type="submit" id="submit-btn" class="input">Claim your free trial</button>
+            <small class="terms">
+              By clicking the button, you are agreeing to our <span class="services">Terms and Services</span>
+            </small>
+          </form>
+
+          
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://macchristo.github.io/Personal-site-1/"
+          >Macaulay Omoikhoje De-great</a
+        >.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
